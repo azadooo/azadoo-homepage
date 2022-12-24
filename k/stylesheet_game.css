@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+}
+.game {
+    width: 700px;
+    height: 200px;
+    border: 4px solid rgb(143, 50, 50);
+    margin: auto;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-image: url("../../k/img/Player1.jpg");
+    position: relative;
+    top: 150px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-image: url("../../k/img/Bild2.png");
+    background-size:20px 20px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -2px}
+}
+p {text-align: center;}
+p {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+p {color: rgb(255, 0, 0);}
+p {font-size: 20px;}
+
+
+h1 {color:rgb(255, 0, 0);}
+h1 {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        height: 80vh;
+        display: contents;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+    }
+
+
+
+button {
+width: 220px;
+height: 50px;
+border: none;
+outline: none;
+color: rgb(255, 0, 0);
+background: #111;
+cursor: pointer;
+position: relative;
+z-index: 0;
+border-radius: 10px;
+}
+
+button:before {
+content: '';
+background: linear-gradient(45deg, #ff0000,#ff0000);
+position: absolute;
+top: -10px;
+left:-10px;
+background-size: 400%;
+z-index: -1;
+filter: blur(5px);
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+animation: glowing 20s linear infinite;
+opacity: 0;
+transition: opacity .3s ease-in-out;
+border-radius: 10px;
+}
+
+
+
+
+button:active {
+color: #000
+}
+
+button:active:after {
+background: transparent;
+}
+
+button:hover:before {
+opacity: 1;
+}
+
+button:after {
+z-index: -1;
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: #111;
+left: 0;
+top: 0;
+border-radius: 10px;
+}
+
+@keyframes glowing {
+0% { background-position: 0 0; }
+50% { background-position: 400% 0; }
+100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+}
+.game {
+    width: 700px;
+    height: 200px;
+    border: 4px solid rgb(143, 50, 50);
+    margin: auto;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-image: url("../../MEDT/TEST/Player1.jpg");
+    position: relative;
+    top: 150px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-image: url("../../MEDT/TEST/Bild2.png");
+    background-size:20px 20px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -2px}
+}
+p {text-align: center;}
+p {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+p {color: rgb(255, 0, 0);}
+p {font-size: 20px;}
+
+
+h1 {color:rgb(255, 0, 0);}
+h1 {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        height: 80vh;
+        display: contents;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+    }
+
+
+
+button {
+width: 220px;
+height: 50px;
+border: none;
+outline: none;
+color: rgb(255, 0, 0);
+background: #111;
+cursor: pointer;
+position: relative;
+z-index: 0;
+border-radius: 10px;
+}
+
+button:before {
+content: '';
+background: linear-gradient(45deg, #ff0000,#ff0000);
+position: absolute;
+top: -10px;
+left:-10px;
+background-size: 400%;
+z-index: -1;
+filter: blur(5px);
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+animation: glowing 20s linear infinite;
+opacity: 0;
+transition: opacity .3s ease-in-out;
+border-radius: 10px;
+}
+
+
+
+
+button:active {
+color: #000
+}
+
+button:active:after {
+background: transparent;
+}
+
+button:hover:before {
+opacity: 1;
+}
+
+button:after {
+z-index: -1;
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: #111;
+left: 0;
+top: 0;
+border-radius: 10px;
+}
+
+@keyframes glowing {
+0% { background-position: 0 0; }
+50% { background-position: 400% 0; }
+100% { background-position: 0 0; }
+}
